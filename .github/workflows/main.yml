@@ -20,5 +20,6 @@ jobs:
           bundle install
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Git fuckyert
-        run: test.sh
+      - name: Git fuckyery
+        run: |
+        sh ./.github/workflows/test.sh

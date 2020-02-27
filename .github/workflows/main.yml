@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ../../.github/actions/build-dist-site
+      - uses: ./.github/actions/build-dist-site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #- uses: actions/setup-ruby@v1

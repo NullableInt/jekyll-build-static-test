@@ -4,6 +4,7 @@ LABEL version="1.0.0"
 ENV BUNDLER_VERSION 2.0.2
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
+  apt-utils \
   bats \
   build-essential \
   ca-certificates \

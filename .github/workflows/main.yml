@@ -20,4 +20,5 @@ jobs:
           bundle install
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: elindsey/jekyll-publish-action@master
+      - name: Git fuckyert
+        run: test.sh

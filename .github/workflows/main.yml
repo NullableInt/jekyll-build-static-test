@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-ruby@v1
       - name: Build
         run: |
-        gem install bundler
-        bundle install
+          gem install bundler
+          bundle install
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: elindsey/jekyll-publish-action@master
